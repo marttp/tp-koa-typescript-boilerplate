@@ -25,6 +25,7 @@
     "koa-bodyparser": "^4.2.1",
     "koa-helmet": "^5.2.0",
     "koa-router": "^7.4.0",
+    "moment": "^2.24.0",
     "winston": "^3.2.1"
   },
   "devDependencies": {

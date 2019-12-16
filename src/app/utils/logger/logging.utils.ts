@@ -1,5 +1,4 @@
-// import Koa from 'koa';
-// import winston, { loggers } from 'winston';
+import winston, { loggers } from 'winston';
 
 // const generateLog = (ctx: Koa.Context, usageTime: number) => {
 //     const msg: string = `${ctx.method} ${ctx.originalUrl} ${ctx.status} ${usageTime}ms`;

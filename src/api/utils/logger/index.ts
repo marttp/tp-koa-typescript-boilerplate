@@ -1,5 +1,32 @@
 import winston, { loggers } from 'winston';
 
+import { LOG_TYPE } from '../../../configs/constants';
+
+const logger = {
+  root: {
+    info: () => {
+      winston.loggers.get(LOG_TYPE.ROOT).info('test');
+    },
+    debug: () => {
+      winston.loggers.get(LOG_TYPE.ROOT).debug('test');
+    },
+    error: () => {
+      winston.loggers.get(LOG_TYPE.ROOT).error('test');
+    },
+  },
+  detail: {
+    info: () => {
+      winston.loggers.get(LOG_TYPE.DETAIL).info('test');
+    },
+    debug: () => {
+      winston.loggers.get(LOG_TYPE.DETAIL).debug('test');
+    },
+    error: () => {
+      winston.loggers.get(LOG_TYPE.DETAIL).error('test');
+    },
+  },
+};
+
 // const generateLog = (ctx: Koa.Context, usageTime: number) => {
 //     const msg: string = `${ctx.method} ${ctx.originalUrl} ${ctx.status} ${usageTime}ms`;
 //     return msg;

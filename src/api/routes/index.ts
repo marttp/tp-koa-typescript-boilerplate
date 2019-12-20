@@ -3,7 +3,7 @@ import Router from 'koa-router';
 /**
  * Declare a routes
  */
-import * as userRoutes from './user.routes';
+import * as userRoutes from './users.route';
 
 const router = new Router({
     prefix: '/api/v1'
